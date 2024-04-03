@@ -1,13 +1,775 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JP Vigniel - Urban painting</title>
+  <meta content="JP Vigniel - Geneva" name="description">
+  <meta content="" name="keywords">
 
 
+ <!-- update the version number as needed -->
+ <script defer src="/__/firebase/9.6.10/firebase-app-compat.js"></script>
+ <!-- include only the Firebase features as you need -->
+ <script defer src="/__/firebase/9.6.10/firebase-auth-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-database-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-firestore-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-functions-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-messaging-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-storage-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-analytics-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-remote-config-compat.js"></script>
+ <script defer src="/__/firebase/9.6.10/firebase-performance-compat.js"></script>
+ <!-- 
+   initialize the SDK after all desired features are loaded, set useEmulator to false
+   to avoid connecting the SDK to running emulators.
+ -->
+ <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio - v4.7.1
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    Welcome on Jip geneva
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">JP Vigniel - Geneva</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#exhibition">Exhibition</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#nfs">NFT</a></li> -->
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+      
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Honme Section ======= -->
+  <div id="home" class="hero route bg-image" style="background-image: url(assets/img2/hangar_92_73.jpeg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4"><span class="typed" data-typed-items="Discover an artist,Discover a painter,based in Geneva"></span></h1>
+          <p class="hero-subtitle"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><!-- End Home Section -->
+
+  <main id="main">
++
+  <!-- ======= Portfolio Section ======= --> 
+  <section id="portfolio" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>  
+            <p class="subtitle-a">
+             
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+   
+      <div class="row">
+
+      <!-- facory -->
+      <div class="col-md-12">
+           <div class="work-box">
+             <a href="assets/img2/facade_100_80.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+               <div class="work-img">
+                 <img src="assets/img2/facade_100_80.jpg" alt="" class="img-fluid">
+               </div>
+             </a>
+             <div class="work-content">
+               <div class="row">
+                 <div class="col-sm-8">
+                   <h2 class="w-title">Facade</h2>
+                   <div class="w-more">
+                     <span class="w-ctegory">Oil</span> / <span class="w-date">100cm x 80cm</span>
+                   </div>
+                 </div>
+             
+               </div>
+             </div>
+           </div>
+         </div>
+      <div class="col-md-6">
+           <div class="work-box">
+             <a href="assets/img2/hangar_92_73.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+               <div class="work-img">
+                 <img src="assets/img2/hangar_92_73.jpeg" alt="" class="img-fluid">
+               </div>
+             </a>
+             <div class="work-content">
+               <div class="row">
+                 <div class="col-sm-8">
+                   <h2 class="w-title">Warehouse</h2>
+                   <div class="w-more">
+                     <span class="w-ctegory">Oil</span> / <span class="w-date">92cm x 73cm</span>
+                   </div>
+                 </div>
+             
+               </div>
+             </div>
+           </div>
+         </div>
+     
+      <div class="col-md-6">
+           <div class="work-box">
+             <a href="assets/img2/factory2_50_70.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox">
+               <div class="work-img">
+                 <img src="assets/img2/factory2_50_70.JPG" alt="" class="img-fluid">
+               </div>
+             </a>
+             <div class="work-content">
+               <div class="row">
+                 <div class="col-sm-8">
+                   <h2 class="w-title">Factory 2</h2>
+                   <div class="w-more">
+                     <span class="w-ctegory">Acrylic</span> / <span class="w-date">50cm x 70cm</span>
+                   </div>
+                 </div>
+             
+               </div>
+             </div>
+           </div>
+         </div>
+</div>
+<!-- city -->
+<div class="row">
+       
+<div class="col-md-4">
+  <div class="work-box">
+    <a href="assets/img2/alambic_50_70.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+      <div class="work-img">
+        <img src="assets/img2/alambic_50_70.jpg" alt="" class="img-fluid">
+      </div>
+    </a>
+    <div class="work-content">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="w-title">Alambic</h2>
+          <div class="w-more">
+            <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 70cm</span>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img2/street_50_70.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/street_50_70.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Street</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 70cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img2/city3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/city3.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Skyline 2</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 70cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        <div class="col-md-6">
+          <div class="work-box">
+            <a href="assets/img2/city_70_50.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/city_70_50.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Skyline</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">70cm x 50cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+        <div class="col-md-6">
+          <div class="work-box">
+            <a href="assets/img2/geneva_60_40.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/geneva_60_40.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Geneva</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">60cm x 40cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- abstract -->
+         <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img2/red2_40_50.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/red2_40_50.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Red 2</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">40cm x 50cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+
+         <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img2/red3_73_92.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/red3_73_92.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Red 3</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">73cm x 92cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+      
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="assets/img2/abstrait3_38_46.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/abstrait3_38_46.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Sun</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">36cm x 48cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+         <div class="col-md-6">
+          <div class="work-box">
+            <a href="assets/img2/abstract5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/abstract5.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Meteor</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 50cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+     
+         <div class="col-md-6">
+          <div class="work-box">
+            <a href="assets/img2/colonne_100_70.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img src="assets/img2/colonne_100_70.jpg" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">Column</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">Oil</span> / <span class="w-date">100cm x 70cm</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+  
+
+  
+       <!-- misc -->
+
+       <div class="col-md-6">
+        <div class="work-box">
+          <a href="assets/img2/Fleur_bonvoisin_50_50.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img2/Fleur_bonvoisin_50_50.jpg" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">Flower (from Bonvoisin)</h2>
+                <div class="w-more">
+                  <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 50cm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+       <div class="col-md-6">
+        <div class="work-box">
+          <a href="assets/img2/cadenas_45_35.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img2/cadenas_45_35.jpg" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">Cadenas</h2>
+                <div class="w-more">
+                  <span class="w-ctegory">Oil</span> / <span class="w-date">46cm x 35cm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+       <div class="col-md-12">
+        <div class="work-box">
+          <a href="assets/img2/pipe_110_90.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+            <div class="work-img">
+              <img src="assets/img2/pipe_110_90.jpg" alt="" class="img-fluid">
+            </div>
+          </a>
+          <div class="work-content">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="w-title">Pipe</h2>
+                <div class="w-more">
+                  <span class="w-ctegory">Oil</span> / <span class="w-date">50cm x 50cm</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+  
+    <!-- ======= Counter Section ======= -->
+    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">AWARD WON</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Counter Section -->
+
+    
+    <!-- ======= Exhibiions Section ======= -->
+    <section id="exhibition" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Exhibitions
+              </h3>
+              <p class="subtitle-a">
+               
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials paralax-mf bg-image" style="background-color: #ff3300; background-image: url(assets/img2/facade_100_80.jpg)">
+          <div class="overlay-mf"></div>
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-12 ">
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                  <div class="swiper-wrapper">
+
+                          <!-- new item -->
+                          <div class="swiper-slide">
+                            <div class="testimonial-box">
+                              <div class="author-test">
+                                <img src="assets/img2/exhibition/2023_veyrier.png" alt="" class="rounded-circle  img-fluid b-shadow-a">
+                                
+                                  <a href="https://www.ittenbrechbuehl.ch/fr/" > <span class="author">La Mansarde - Veyrier</span></a> 
+                              </div>
+                              <div class="content-test">
+                                <p class="description lead">
+                               Veyrier - Novembre 2023
+                                </p>
+                              </div>
+                            </div>
+                          </div><!-- End testimonial item -->
+                  
+                  <!-- new item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="author-test">
+                        <img src="assets/img2/exhibition/indosuez.png" alt="" class="rounded-circle b-shadow-a">
+                        <span class="author">Indosuez Art project</span>
+                      </div>
+                      <div class="content-test">
+                        <p class="description lead">
+                        Geneva - 2019-2020
+                        </p>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+                <!-- new item -->
+                <div class="swiper-slide">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="assets/img2/exhibition/ib.png" alt="" class="rounded-circle  img-fluid b-shadow-a">
+                      
+                        <a href="https://www.ittenbrechbuehl.ch/fr/" > <span class="author">Itten Brechbuehl</span></a> 
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                      Geneva - Février-Mars 2019
+                      </p>
+                    </div>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                    <!-- start of sleder items -->
+                    <div class="swiper-slide">
+                      <div class="testimonial-box">
+                        <div class="author-test">
+                          <img src="assets/img2/exhibition/2018-life_of_art.png" alt="" class="jpv-slide rounded-circle b-shadow-a">
+                          <span class="author">Life of Art</span>
+                        </div>
+                        <div class="content-test">
+                          <p class="description lead">
+                           Geneva - 2018
+                          </p>
+                        </div>
+                      </div>
+                    </div><!-- End item  -->
+
+              
+
+
+                 
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+              
+            </div> -->
+              </div>
+            </div>
+          </div>
+        </div><!-- End Testimonials Section -->
+      </div>
+    </section>
+
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0 text-justify">
+                  <div class="title-box-2">
+
+
+                    <h5 class="title-left">
+                      About 
+                    </h5>
+                  </div>
+                  <!-- <p class="lead">
+                    Interpellé par la durée de vie si courte des constructions et des objets contemporains, JIP en a fait le sujet principal de ses œuvres. <br>
+                    Parfois abstraites, parfois réalistes, elles témoignent d’un monde où l’obsolescence semble régner en maître. 
+                  </p>
+
+                  <p class="lead">
+                    Inspiré par des artistes comme Zao Wou-Ki ou Surata Bajaj pour leurs sens de la composition et le traitement des lumières il débute son apprentissage à Grenoble 
+                    avec Catherine Harley. Venu à Genève par amour, il croise Joanis Andino avec qui il peint désormais depuis presque dix ans.<br>
+                  </p> 
+                <p class="lead">
+
+                  De toutes les techniques d'art découvertes au cours de ces années,
+                  la peinture à l'huile reste son medium favori. <br>Au pinceau ou à la spatule, elle permet de construire et déconstruire des tableaux riches et puissants. 
+        
+                </p> -->
+                
+                  <p class="lead">
+                    Interested by the short life span of contemporary constructions and objects, I have made this the main subject of my work.<br>
+                    Sometimes abstract, sometimes realistic, they bear witness to a world where obsolescence seems to reign supreme.
+                  </p>
+
+                  <p class="lead">
+                    Inspired by artists such as Zao Wou-Ki or Surata Bajaj for their sense of composition and treatment of light, I began my apprenticeship in Grenoble with Catherine Harley and continue in Geneva with Joanis Andino. 
+                    <br>
+                  </p> 
+                <p class="lead">
+
+                  Of all the art techniques discovered during these years, oil painting remains my favourite medium.<br>
+                  With a brush or a spatula, it allows me to construct and deconstruct rich and powerful paintings.
+        
+                </p>
+                
+                
+              
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="title-box-2 pt-4 pt-md-0">
+                  <h5 class="title-left">
+                    Get in Touch
+                  </h5>
+                </div>
+                <div class="more-info">
+                  <p class="lead">
+                  </p>
+                  <ul class="list-ico">
+                    <li><span class="bi bi-envelope"></span> info@jip-geneva.ch</li>
+                  </ul>
+                </div>
+                <div class="socials">
+                  <ul>
+                    <li><a href="https://www.instagram.com/jipgeneva/"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/jip-geneva-475a9911a/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by Jip Geneva
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loadEl = document.querySelector('#load');
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.firestore().doc('/foo/bar').get().then(() => { });
+      // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      firebase.analytics(); // call to activate
+      firebase.analytics().logEvent('tutorial_completed');
+      // firebase.performance(); // call to activate
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+      try {
+        let app = firebase.app();
+        let features = [
+          'auth', 
+          'database', 
+          'firestore',
+          'functions',
+          'messaging', 
+          'storage', 
+          'analytics', 
+          'remoteConfig',
+          'performance',
+        ].filter(feature => typeof app[feature] === 'function');
+        loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
 </body>
 
 </html>
